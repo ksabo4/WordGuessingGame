@@ -1,0 +1,18 @@
+.button:focused,
+.toggle-button:focused,
+.radio-button:focused > .radio,
+.check-box:focused > .box,
+.menu-button:focused,
+.choice-box:focused,
+.color-picker.split-button:focused > .color-picker-label,
+.combo-box-base:focused,
+.slider:focused .thumb {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+}
+
+/* I got this css file from StackOverflow made by the user jewelsea
+at https://stackoverflow.com/questions/6092500/how-do-i-remove-the-default-border-glow-of-a-javafx-button-when-selected
+This css file removes the blue border which could make the guessing screen confusing
+as when a button is disabled, it will make the button next to it selected. */

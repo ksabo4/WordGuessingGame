@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Game">
+   <children>
+      <Label fx:id="heading" text="Your theme is ...">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="guessesText" text="Guesses left:  _">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="wordText" text="_ _ _ _ _ _ _">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="q" onAction="#ButtonPressed" userData="q"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="w" onAction="#ButtonPressed" userData="w"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="e" onAction="#ButtonPressed" userData="e"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="r" onAction="#ButtonPressed" userData="r"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="t" onAction="#ButtonPressed" userData="t"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="y" onAction="#ButtonPressed" userData="y"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="u" onAction="#ButtonPressed" userData="u"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="i" onAction="#ButtonPressed" userData="i"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="o" onAction="#ButtonPressed" userData="o"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="p" onAction="#ButtonPressed" userData="p"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="a" onAction="#ButtonPressed" userData="a"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="s" onAction="#ButtonPressed" userData="s"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="d" onAction="#ButtonPressed" userData="d"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="f" onAction="#ButtonPressed" userData="f"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="g" onAction="#ButtonPressed" userData="g"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="h" onAction="#ButtonPressed" userData="h"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="j" onAction="#ButtonPressed" userData="j"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="k" onAction="#ButtonPressed" userData="k"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="l" onAction="#ButtonPressed" userData="l"/>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="z" onAction="#ButtonPressed" userData="z"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="x" onAction="#ButtonPressed" userData="x"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="c" onAction="#ButtonPressed" userData="c"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="v" onAction="#ButtonPressed" userData="v"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="b" onAction="#ButtonPressed" userData="b"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="n" onAction="#ButtonPressed" userData="n"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="m" onAction="#ButtonPressed" userData="m"/>
+            <Button mnemonicParsing="false" prefHeight="25" prefWidth="50" text="-" onAction="#ButtonPressed" userData="-"/>
+         </children>
+      </HBox>
+      <Label visible="false" fx:id="warningText" text="You need to type 1 letter!" textFill="RED" />
+   </children>
+</VBox>
